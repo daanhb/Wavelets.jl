@@ -8,6 +8,8 @@ include("mod/Transforms.jl")
 include("mod/Threshold.jl")
 include("mod/Plot.jl")
 
+include("filters/filters.jl")
+
 using Reexport
 @reexport using .Util, .WT, .Transforms, .Threshold, .Plot
 

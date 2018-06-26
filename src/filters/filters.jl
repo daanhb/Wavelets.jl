@@ -2,6 +2,7 @@ module Filters
 
 import Base: +, -, *, /
 
+export zero_padding
 
 include("sequences.jl")
 include("extensions.jl")

@@ -23,7 +23,7 @@ macro test_vecnorm_eq_eps(a, b, c)
     :(test_vecnorm_eq($(esc(a)), $(esc(b)), $(esc(c)), $(string(a)), $(string(b))))
 end
 
-
+include("test_filters.jl")
 include("util.jl")
 include("transforms.jl")
 include("threshold.jl")

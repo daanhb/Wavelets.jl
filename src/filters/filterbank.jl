@@ -294,6 +294,7 @@ function polyphase_synthesis!(x, L::Int, y, l1::Int, l2::Int, f::FilterMatrix, e
     T = eltype(x)
     l = L>>1 - 1
 
+    # TODO: distinguish between boundary regions and the middle region
     @inbounds for j in 0:l
         xj_e = zero(T)
         xj_o = zero(T)

@@ -1,4 +1,5 @@
 
+
 """
 From a given filter h_i, compute a new filter satisfying the alternating flip relation,
 centered around the given pivot:
@@ -49,3 +50,8 @@ evenpart(h::FIRFilter) =
 "Return the odd part of a sequence `s`, defined by `s_o[k] = s[2k+1]`."
 oddpart(h::FIRFilter) =
     FIRFilter([h[j] for j in nextodd(leftindex(h)):2:rightindex(h)], div(previouseven(leftindex(h)),2))
+
+function convolution(h1::Sequence, h2::Sequence, i)
+    T = promote_type(eltype(h1), eltype(h2))
+    z = zero(T)
+end

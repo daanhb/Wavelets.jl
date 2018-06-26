@@ -16,6 +16,13 @@ export SymmetricExtension
 export symmetric_extension_halfpoint_odd, symmetric_extension_halfpoint_even,
     symmetric_extension_wholepoint_odd, symmetric_extension_wholepoint_even
 
+# interface for symmetric extensions
+export CompactSymmetricExtension
+export compact_symmetric_sequence_halfpoint_odd,
+    compact_symmetric_sequence_halfpoint_even,
+    compact_symmetric_sequence_wholepoint_odd,
+    compact_symmetric_sequence_wholepoint_even
+
 
 """
 A `DoublyInfiniteVector` is a sequence of infinite length that can be indexed
